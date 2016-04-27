@@ -1,0 +1,29 @@
+#-------------
+#!/bin/bash
+
+#This script's purpose is to create all icons needed for an iOS app for iPad
+
+#iPad - Settings - iOS 5-9 29pt
+sips -s format png -z 29 29 $1 --out Icon-29.png
+sips -s format png -z 58 58 $1 --out Icon-29@2x.png
+
+#iPad - Spotlight - iOS 7-9 40pt
+sips -s format png -z 40 40 $1 --out Icon-40.png
+sips -s format png -z 80 80 $1 --out Icon-40@2x.png
+
+#iPad - Spotlight - iOS 5,6 50pt
+sips -s format png -z 50 50 $1 --out Icon-50.png
+sips -s format png -z 100 100 $1 --out Icon-50@2x.png
+sips -s format png -z 150 150 $1 --out Icon-50@3x.png
+
+#iPad - iPad App - iOS 5,6 72pt
+sips -s format png -z 72 72 $1 --out Icon-72.png
+sips -s format png -z 144 144 $1 --out Icon-72@2x.png
+
+#iPad - iPad App - iOS 7-9 76pt
+sips -s format png -z 76 76 $1 --out Icon-76.png
+sips -s format png -z 152 152 $1 --out Icon-76@2x.png
+
+exit
+
+#--------------------------

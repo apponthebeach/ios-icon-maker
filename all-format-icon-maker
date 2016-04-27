@@ -1,0 +1,15 @@
+#-------------------------
+#!/bin/bash
+
+#This script is just an execution of the 3 following scripts 
+#iPhone-icon-maker is used to generate all formats needed for an iPhone app
+#iPad-icon-maker is used to generate all formats needed for an iPad app
+#AppleWatch-icon-maker is used to generate all formats needed for an Apple Watch app
+
+./iPhone-icon-maker $1
+./iPad-icon-maker $1
+./AppleWatch-icon-maker $1
+
+exit
+
+#-------------------------
